@@ -1,0 +1,37 @@
+parking_system/
+├── main.py                            # Khởi chạy ứng dụng
+├── config.py                          # Cấu hình chung
+│
+├── gui/                               # Giao diện CustomTkinter
+│   ├── __init__.py
+│   ├── app.py                         # Giao diện tổng thể có Sidebar + Main 
+│   ├── sidebar.py                     # Thanh menu bên trái
+│   ├── pages/                         # Giao diện từng trang
+│   │   ├── __init__.py
+│   │   ├── home_page.py               # Trang chủ
+│   │   ├── vehicle_inout_page.py      # Quản lý xe vào/ra
+│   │   ├── parking_lot_page.py        # Quản lý bãi đậu
+│   │   └── vehicle_info_page.py       # Quản lý thông tin xe
+│
+├── database/
+│   ├── __init__.py
+│   ├── database_manager.py             # Giao tiếp với SQLite 
+│   
+│
+├── models/                             # Tài nguyên: mô hình
+│   ├── yolov5/                         
+│   ├── paddleocr/                      
+│   │   ├── ch_ppocr_mobile_v2.0_cls_infer
+│   │   ├── en_PP-OCRv3_rec_infer
+|   |   |── en_PP-OCRvD3_det_infer                    
+│   └── CarParkPos                      
+|   └── LP_detector_nano_61.pt                     
+│
+├── my_paking/
+│   ├── __init__.py
+│   ├── camera.py                      # Xử lý video/camera
+│   ├── license_plate.py               # Xử lý vị trí đỗđỗ
+|   |── parking_spot.py                # Nhận diện vị trí đậu OpenCV 
+│   └── statistics.py                  # Thống kê và biểu đồ
+│
+├── requirements.txt
