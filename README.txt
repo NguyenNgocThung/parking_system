@@ -61,7 +61,3 @@ CÀI ĐẶT
     }
 
 CHẠY ỨNG DỤNG: python main.py
-
-
-V
-
